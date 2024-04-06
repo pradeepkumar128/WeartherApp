@@ -14,16 +14,19 @@
               <div class="main-box">
                   <h2>Weather App</h2>
                   <div class="inputArea">
-                      <input type="text" id="seachInput" placeholder="Enter City Name...">
-                      <button><i class="fas fa-search"></i> Search</button>
+                      <input type="text" id="searchInput" placeholder="Enter City Name...">
+                      <button class="button" onclick="searchWeather()"><i class="fas fa-search"></i> Search</button>
                   </div>
                   <div class="weather-info">
                       <h2 id="location">City, Country</h2>
                       <p id="temperature">Temperature: 0°C</p>
                       <p id="description">Description: Clear sky</p>
+                      <i id="weatherIcon" class="fas fa-sun"></i>
+                      <div id="error"></div>
                   </div>  
               </div>
           </div>
 </body>
 <script src="./App.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </html>
